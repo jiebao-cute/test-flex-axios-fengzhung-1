@@ -1,17 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <ElInput v-model="name" clearable @focus="change" @clear="clear"></ElInput>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import ElInput from "@/components/ElInput";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ElInput
+  },
+  data(){
+    return{
+      name:''
+    }
+  },
+  watch:{
+    name(val){
+      console.log(val)
+    }
+  },
+  methods:{
+    change(){
+      console.log('focus实现了一次')
+    },
+    clear(){
+      console.log('clear实现了一次')
+    }
   }
 }
 </script>

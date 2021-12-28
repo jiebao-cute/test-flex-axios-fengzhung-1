@@ -6,12 +6,13 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:dev":"vue-cli-service build --mode development",
-    "build:sit":"vue-cli-service build --mode sit",
-    "build:uat":"vue-cli-service build --mode uat",
-    "build:prod":"vue-cli-service build --mode production"
+    "build:dev": "vue-cli-service build --mode development",
+    "build:sit": "vue-cli-service build --mode sit",
+    "build:uat": "vue-cli-service build --mode uat",
+    "build:prod": "vue-cli-service build --mode production"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "echarts": "^5.2.2",
     "element-ui": "^2.15.6",
